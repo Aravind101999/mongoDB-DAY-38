@@ -1,6 +1,6 @@
-// Switching to Day-37 Database
+// Day-37 Database
 
-// use Day_37;
+// use Day_38;
 
 //Creating Users collection
 db.users.insert([
@@ -66,7 +66,7 @@ db.codekata.insert([
   },
 ]);
 
-// creating attendance and topics covered in a single collection
+// creating attendance ,task and topics covered in a single collection
 db.attendance.insert([
   {
     class_date: new Date("2020-10-11"),
@@ -181,7 +181,7 @@ db.company_drives.aggregate([
   },
 ]);
 
-//Q4. Find the number of problems solved by the user in codekata. We will get the answer in countp
+//Q4. Find the number of problems solved by the user in codekata.
 db.users.aggregate([
   {
     $lookup: {
